@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shruti Jain - Portfolio">
+    <meta name="author" content="Shruti Jain">
+
+    <title> Shruti Jain - Portfolio</title>
+
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/gt_favicon.png') }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+    <!-- Icon font -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!--[if lt IE 9]> <script src="{{ url_for('static', filename='js/html5shiv.js') }}"></script> <![endif]-->
+</head>
+<body>
+
+<header id="header">
+    <div id="head" class="parallax" parallax-speed="1">
+        <h1 id="logo" class="text-center">
+            <img class="img-circle" src="{{ url_for('static', filename='images/shruti.jpeg') }}" alt="Shruti Jain">
+            <span class="title">Shruti Jain</span>
+            <span class="tagline">Software Developer | AI & Data Engineering Enthusiast</span>
+        </h1>
+    </div>
+
+    <nav class="navbar navbar-default navbar-sticky">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#technical-skills">Technical Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <!-- <li><a href="#certifications">Certifications</a></li> -->
+                    <!-- <li><a href="#awards">Awards</a></li> -->
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+</header>
+
+<main id="main">
+
+    <div class="container">
+
+        <div class="row topspace">
+            <div class="col-sm-8 col-sm-offset-2">
+
+                <section id="about" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">About Me</h1>
+                    </header>
+                    <div class="entry-content">
+                        <p>I am a Software Developer and AI practitioner with experience in full-stack web development, backend systems, and AI/ML projects. I specialize in building scalable applications, designing intelligent agents, and leveraging data-driven insights to solve real-world problems. My work includes web-based B2B/B2C platforms, AI-driven productivity tools, and advanced machine learning applications.</p>
+                    </div>
+                </section><!-- #about -->
+
+                <section id="technical-skills" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Technical Skills</h1>
+                    </header>
+                    <div class="entry-content">
+                        <ul class="technical-skills-list">
+                            <li><strong>Agentic AI:</strong> CrewAI, LangGraph</li>
+                            <li><strong>RAG Pipelines:</strong> Vector DB (FAISS), semantic search, embedding models</li>
+                            <li><strong>Programming & Backend:</strong> Python, NodeJS, Flask, FastAPI, REST APIs</li>
+                            <li><strong>Data Engineering:</strong> SQL, MongoDB, Redis, ElasticSearch</li>
+                            <li><strong>Data Visualization:</strong> Tableau, Power BI</li>
+                            <li><strong>Tools & DevOps:</strong> Git, GitHub, Postman, JIRA, Streamlit, Docker</li>
+                        </ul>
+                    </div>
+                </section><!-- #technical-skills -->
+
+                <section id="experience" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Experience</h1>
+                    </header>
+                    <div class="entry-content">
+                        <h3>Socommerz Technologies Pvt. Ltd. (Jan 2023 - Apr 2024)</h3>
+                        <p>Software Developer (Remote)</p>
+                        <ul>
+                            <li>Collaborated with frontend engineers to build a web-based B2B, B2C, and POS application, developing backend features like order processing, inventory tracking, warehouse sync, returns flow, and analytics dashboards using Node.js.</li>
+                            <li>Managed integrations with Shiprocket (3PL), Razorpay (payment processing), Google Analytics (dashboard), and Meta Commerce Manager (marketing).</li>
+                            <li>Optimized database operations using Redis and ElasticSearch, improving performance by 30%.</li>
+                            <li>Assisted in developing proof-of-concepts, including Python-based price tracking and designing LLMs to generate reports.</li>
+                            <li>Managed and queried large datasets using SQL and MongoDB.</li>
+                        </ul>
+                    </div>
+                </section><!-- #experience -->
+
+                <section id="education" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Education</h1>
+                    </header>
+                    <div class="entry-content">
+                        <h3>Durham College (Dec 2025)</h3>
+                        <p>Artificial Intelligence Analysis, Design and Implementation | GPA: 4.82/5.0 (College Honor Roll)</p>
+
+                        <h3>Durham College (Dec 2024)</h3>
+                        <p>Data Analysis for Business Decision Making | GPA: 4.82/5.0</p>
+
+                        <h3>Vishwakarma Government Engineering College, Gujarat Technological University (Ahmedabad, India)</h3>
+                        <p>B.E. in Information Technology | CGPA: 9.48/10.0 (Top Ranker of the Year Award, 2021-2022)</p>
+                    </div>
+                </section><!-- #education -->
+
+                <!-- <section id="certifications" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Certifications</h1>
+                    </header>
+                    <div class="entry-content">
+                        <ul>
+                            <li>LambdaTest Test Automation Professional Certificate (2023)</li>
+                            <li>Lean Six Sigma (2023)</li>
+                            <li>Java 8+ Essential Training (2021)</li>
+                            <li>Microsoft SQL Server 2016 Essential Training (2020)</li>
+                            <li>Java Programming (2016)</li>
+                            <li>Microsoft Technology Associate: Security Fundamentals (2016)</li>
+                            <li>C Programming (2015)</li>
+                        </ul>
+                    </div>
+                </section>#certifications -->
+
+                <section id="projects" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Projects</h1>
+                    </header>
+                    <div class="entry-content">
+                        <ul>
+                            <li><strong>Fake News Detection Platform:</strong> Built an app using LLaMA, Brave Search API, and GLHF.search API with RAG pipelines and Streamlit for UI.</li>
+                            <li><strong>AI Productivity Scheduler:</strong> Personal time management agent using CrewAI & Groq-hosted LLaMA-3. Automated daily schedules by parsing timetables, deadlines, and syncing with Google Calendar.</li>
+                            <li><strong>Skincare Analyzer:</strong> AI-driven computer vision app to analyze skin type, pores, wrinkles, hydration, and recommend personalized skincare routines.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- <section id="awards" class="post">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Awards</h1>
+                    </header>
+                    <div class="entry-content">
+                        <h3>Best Automation Engineer Award</h3>
+                        <p>Awarded by Tata Consultancy Services for outstanding contributions in developing and implementing automation frameworks.</p>
+
+                        <h3>Employee of the Month</h3>
+                        <p>Awarded by Armstrong Fluid Technology for exceptional performance in project delivery and support.</p>
+                    </div>
+                </section>#awards -->
+
+            </div>
+        </div> <!-- /row post  -->
+
+    </div>    <!-- /container -->
+
+</main>
+
+<footer id="footer" class="topspace">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 widget">
+                <h3 class="widget-title">Contact</h3>
+                <div class="widget-body">
+                    <p><a href="mailto:shrutij.dev@gmail.com">shrutij.dev@gmail.com</a></p>
+                </div>
+            </div>
+
+            <div class="col-md-6 widget">
+                <h3 class="widget-title">Follow Me</h3>
+                <div class="widget-body">
+                    <p class="follow-me-icons">
+                        <a href="https://www.linkedin.com/in/shruti-jain-018361216/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://github.com/shrut-ij" target="_blank"><i class="fa fa-github"></i></a>
+                        <!-- <a href="https://twitter.com/yourname" target="_blank"><i class="fa fa-twitter"></i></a> -->
+                        <!-- <a href="https://www.facebook.com/yourname" target="_blank"><i class="fa fa-facebook"></i></a> -->
+                    </p>
+                </div>
+            </div>
+        </div> <!-- /row of widgets -->
+    </div>
+</footer>
+
+<footer id="underfooter">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 widget">
+                <div class="widget-body">
+                    <p class="text-right">&copy; 2025 Shruti Jain. All rights reserved.</p>
+                </div>
+            </div>
+        </div> <!-- /row of widgets -->
+    </div>
+</footer>
+
+<!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
